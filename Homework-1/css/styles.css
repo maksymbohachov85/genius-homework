@@ -134,6 +134,10 @@ a {
 
 /* Footer */
 
+.footer-section {
+  background-color: var(--color-brand-dark);
+}
+
 .footer-link {
   color: var(--color-primary-light);
   font-size: 16px;
