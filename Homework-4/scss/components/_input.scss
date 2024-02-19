@@ -1,0 +1,26 @@
+.input {
+  &__label {
+    display: block;
+    color: var(--color-primary-light);
+  }
+
+  &__control {
+    padding: 18px 33px;
+    width: 100%;
+    border: 2px solid var(--color-copyright);
+    border-radius: 32px;
+    background-color: transparent;
+    font-size: 13px;
+    color: var(--color-primary-light);
+
+    &:focus {
+      background-color: var(--color-copyright);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-primary-light);
+      font-size: 13px;
+    }
+  }
+}
