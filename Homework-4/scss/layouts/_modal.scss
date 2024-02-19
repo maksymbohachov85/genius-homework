@@ -1,0 +1,72 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  transition: opacity 0.5s, visibility 0.5s;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  height: 100%;
+  max-height: 680px;
+  padding: 42px 144px;
+  background-image: url(../images/modal-background.png);
+  background-color: var(--color-brand-dark);
+  border-radius: 48px;
+  overflow-y: auto;
+
+  @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/images/modal-background@2x.png');
+    }
+
+  &__btn-close {
+    position: absolute;
+    font-family: 'Roboto';
+    top: 42px;
+    right: 42px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-family: Play;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-primary-light);
+    text-align: center;
+  }
+
+  &__form-modal-text {
+    color: var(--color-primary-light);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 auto 32px;
+    padding: 0;
+    max-width: 275px;
+    text-align: center;
+  }
+
+  &__form-modal-field {
+    margin: 0 auto 24px;
+    max-width: 310px;
+    text-align: center;
+  }
+}
