@@ -1,0 +1,31 @@
+.procedures-card {
+  position: relative;
+  height: 456px;
+  padding: 372px 77px 32px 115px;
+  background-image: url(../images/rectangle-maska.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/images/rectangle-maska@2x.png');
+    }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__title {
+    width: 152px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.18;
+    color: var(--color-primary-light);
+  }
+}

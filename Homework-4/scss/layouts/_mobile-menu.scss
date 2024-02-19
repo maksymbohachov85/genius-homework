@@ -1,0 +1,54 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary-light);
+  transform: translateX(100%);
+  transition: transform 0.3s;
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+  }
+
+  &__nav,
+  &__icons {
+    padding: 16px 20px;
+  }
+
+  &__menu {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__link {
+    color: var(--color-brand-dark);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color-brand-light);
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__icon {
+    fill: var(--color-brand-dark);
+
+    &:hover {
+      fill: var(--color-brand-light);
+    }
+  }
+}
